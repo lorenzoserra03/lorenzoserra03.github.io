@@ -3,96 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Autoscuola Tharros</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- SIDEBAR MOBILE -->
-<div class="ui vertical inverted sidebar menu">
-  <a class="item">Home</a>
-  <a class="item">Corsi</a>
-  <a class="item">Orari</a>
-  <a class="item">Contatti</a>
-</div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold">Autoscuola Tharros</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<!-- MENU DESKTOP -->
-<div class="ui top fixed inverted menu">
-  <a class="item" id="sidebarToggle">
-    <i class="sidebar icon"></i>
-  </a>
-  <div class="header item">Autoscuola Tharros</div>
-
-  <div class="right menu">
-    <a class="item">Home</a>
-    <a class="item">Corsi</a>
-    <a class="item">Orari</a>
-    <a class="item">Contatti</a>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active">Home</a></li>
+        <li class="nav-item"><a class="nav-link">Corsi</a></li>
+        <li class="nav-item"><a class="nav-link">Orari</a></li>
+        <li class="nav-item"><a class="nav-link">Contatti</a></li>
+      </ul>
+    </div>
   </div>
-</div>
+</nav>
 
 <!-- HERO -->
-<div class="ui inverted vertical masthead center aligned segment" style="background:#2185d0; padding:8em 0; margin-top:3.5em;">
-  <div class="ui text container">
-    <h1 class="ui inverted header">Autoscuola Tharros</h1>
-    <h2>La tua guida verso la patente</h2>
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Autoscuola Tharros</h1>
+    <p class="lead">La tua guida verso la patente</p>
   </div>
-</div>
+</section>
 
 <!-- SERVIZI -->
-<div class="ui vertical stripe segment">
-  <div class="ui text container">
-    <h2 class="ui center aligned header">I nostri servizi</h2>
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">I nostri servizi</h2>
 
-    <div class="ui three stackable cards" style="margin-top:2em;">
+    <div class="row g-4">
 
-      <div class="card">
-        <div class="content">
-          <div class="header">Patente B</div>
-          <div class="description">
-            Lezioni teoriche e pratiche con istruttori qualificati.
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Patente B</h5>
+            <p class="card-text">Lezioni teoriche e pratiche con istruttori qualificati.</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="content">
-          <div class="header">Patente A</div>
-          <div class="description">
-            Preparazione completa per moto e motocicli.
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Patente A</h5>
+            <p class="card-text">Preparazione completa per moto e motocicli.</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="content">
-          <div class="header">Rinnovo Patenti</div>
-          <div class="description">
-            Visite mediche in sede e gestione pratiche.
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Rinnovo Patenti</h5>
+            <p class="card-text">Visite mediche in sede e gestione pratiche.</p>
           </div>
         </div>
       </div>
 
     </div>
   </div>
-</div>
+</section>
 
 <!-- FOOTER -->
-<div class="ui inverted vertical footer segment" style="padding:2em 0;">
-  <div class="ui center aligned container">
-    Autoscuola Tharros – Oristano
-  </div>
-</div>
+<footer class="bg-primary text-white text-center py-3">
+  Autoscuola Tharros – Oristano
+</footer>
 
-<!-- JS UFFICIALI SEMANTIC UI -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
-
-<!-- ATTIVAZIONE COMPONENTI (senza JS custom: solo chiamate Semantic) -->
-<script>
-  $('#sidebarToggle').on('click', function () {
-    $('.ui.sidebar').sidebar('toggle');
-  });
-</script>
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
