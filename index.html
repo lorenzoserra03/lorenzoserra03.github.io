@@ -3,80 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Autoscuola Tharros</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar is-primary" role="navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item has-text-weight-bold">
-      Autoscuola Tharros
-    </a>
-  </div>
+<!-- SIDEBAR MOBILE -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="item">Home</a>
+  <a class="item">Corsi</a>
+  <a class="item">Orari</a>
+  <a class="item">Contatti</a>
+</div>
 
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <a class="navbar-item">Home</a>
-      <a class="navbar-item">Corsi</a>
-      <a class="navbar-item">Orari</a>
-      <a class="navbar-item">Contatti</a>
-    </div>
+<!-- MENU DESKTOP -->
+<div class="ui top fixed inverted menu">
+  <a class="item" id="sidebarToggle">
+    <i class="sidebar icon"></i>
+  </a>
+  <div class="header item">Autoscuola Tharros</div>
+
+  <div class="right menu">
+    <a class="item">Home</a>
+    <a class="item">Corsi</a>
+    <a class="item">Orari</a>
+    <a class="item">Contatti</a>
   </div>
-</nav>
+</div>
 
 <!-- HERO -->
-<section class="hero is-info is-medium">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        Autoscuola Tharros
-      </h1>
-      <h2 class="subtitle">
-        La tua guida verso la patente
-      </h2>
-    </div>
+<div class="ui inverted vertical masthead center aligned segment" style="background:#2185d0; padding:8em 0; margin-top:3.5em;">
+  <div class="ui text container">
+    <h1 class="ui inverted header">Autoscuola Tharros</h1>
+    <h2>La tua guida verso la patente</h2>
   </div>
-</section>
+</div>
 
 <!-- SERVIZI -->
-<section class="section">
-  <div class="container">
-    <h2 class="title has-text-centered">I nostri servizi</h2>
+<div class="ui vertical stripe segment">
+  <div class="ui text container">
+    <h2 class="ui center aligned header">I nostri servizi</h2>
 
-    <div class="columns is-multiline">
+    <div class="ui three stackable cards" style="margin-top:2em;">
 
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <h3 class="title is-4">Patente B</h3>
-          <p>Lezioni teoriche e pratiche con istruttori qualificati.</p>
+      <div class="card">
+        <div class="content">
+          <div class="header">Patente B</div>
+          <div class="description">
+            Lezioni teoriche e pratiche con istruttori qualificati.
+          </div>
         </div>
       </div>
 
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <h3 class="title is-4">Patente A</hh3>
-          <p>Preparazione completa per moto e motocicli.</p>
+      <div class="card">
+        <div class="content">
+          <div class="header">Patente A</div>
+          <div class="description">
+            Preparazione completa per moto e motocicli.
+          </div>
         </div>
       </div>
 
-      <div class="column is-one-third">
-        <div class="box has-text-centered">
-          <h3 class="title is-4">Rinnovo Patenti</h3>
-          <p>Visite mediche in sede e gestione pratiche.</p>
+      <div class="card">
+        <div class="content">
+          <div class="header">Rinnovo Patenti</div>
+          <div class="description">
+            Visite mediche in sede e gestione pratiche.
+          </div>
         </div>
       </div>
 
     </div>
   </div>
-</section>
+</div>
 
 <!-- FOOTER -->
-<footer class="footer has-background-primary has-text-white">
-  <div class="content has-text-centered">
+<div class="ui inverted vertical footer segment" style="padding:2em 0;">
+  <div class="ui center aligned container">
     Autoscuola Tharros – Oristano
   </div>
-</footer>
+</div>
+
+<!-- JS UFFICIALI SEMANTIC UI -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+<!-- ATTIVAZIONE COMPONENTI (senza JS custom: solo chiamate Semantic) -->
+<script>
+  $('#sidebarToggle').on('click', function () {
+    $('.ui.sidebar').sidebar('toggle');
+  });
+</script>
 
 </body>
 </html>
