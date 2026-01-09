@@ -2,26 +2,81 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Pagina di Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-    </style>
+    <title>Autoscuola Tharros</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-    <div class="box">
-        <h1>Ciao!</h1>
-        <p>Questa è una semplice pagina HTML di test.</p>
-        <button onclick="alert('Funziona!')">Prova il pulsante</button>
+
+<!-- NAVBAR -->
+<nav class="navbar is-primary" role="navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item has-text-weight-bold">
+      Autoscuola Tharros
+    </a>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item">Home</a>
+      <a class="navbar-item">Corsi</a>
+      <a class="navbar-item">Orari</a>
+      <a class="navbar-item">Contatti</a>
     </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero is-info is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Autoscuola Tharros
+      </h1>
+      <h2 class="subtitle">
+        La tua guida verso la patente
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIZI -->
+<section class="section">
+  <div class="container">
+    <h2 class="title has-text-centered">I nostri servizi</h2>
+
+    <div class="columns is-multiline">
+
+      <div class="column is-one-third">
+        <div class="box has-text-centered">
+          <h3 class="title is-4">Patente B</h3>
+          <p>Lezioni teoriche e pratiche con istruttori qualificati.</p>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="box has-text-centered">
+          <h3 class="title is-4">Patente A</hh3>
+          <p>Preparazione completa per moto e motocicli.</p>
+        </div>
+      </div>
+
+      <div class="column is-one-third">
+        <div class="box has-text-centered">
+          <h3 class="title is-4">Rinnovo Patenti</h3>
+          <p>Visite mediche in sede e gestione pratiche.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer has-background-primary has-text-white">
+  <div class="content has-text-centered">
+    Autoscuola Tharros – Oristano
+  </div>
+</footer>
+
 </body>
 </html>
